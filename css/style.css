@@ -1,0 +1,43 @@
+/* ======= Estilos Generales ======= */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* ======= Hero Section ======= */
+section.bg-primary {
+  background: linear-gradient(135deg, #0c610c, #01440c);
+  color: white;
+}
+
+
+footer {
+  background-color: #0f0f0f;
+  font-size: 14px;
+}
+
+/* ======= Header ======= */
+
+.header-visual {
+  background-image: url('../img/etica-hacker.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+}
+
+.header-visual .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-visual h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
