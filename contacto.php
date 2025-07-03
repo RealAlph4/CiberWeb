@@ -33,13 +33,6 @@
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
-
-      <!-- Botón de redirección alineado a la izquierda -->
-      <div class="mt-3 text-start">
-        <a href="listar_contactos.php" class="btn btn-secondary" style="opacity: 0.1; text-decoration: none;">
-          Ver contactos registrados
-        </a>
-      </div>
     </section>
   </main>
 

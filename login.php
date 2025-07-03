@@ -2,21 +2,38 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión - AlbumSeeker</title>
-    <link rel="stylesheet" href="/entrega2/assets/css/styles.css"> <!-- Asegúrate de que la ruta sea correcta -->
+    <title>Iniciar Sesión | CiberWeb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Iniciar Sesión</h1>
-    <form action="php/procesar_login.php" method="POST">
-        <label for="correo">Correo Electrónico:</label>
-        <input type="email" id="correo" name="correo" required><br><br>
+    <?php include 'componentes/header.php'; ?>
+    <?php include 'componentes/navbar.php'; ?>
 
-        <label for="clave">Contraseña:</label>
-        <input type="password" id="clave" name="clave" required><br><br>
+    <main class="container my-5">
+        <div class="form-container">
+            <div class="form-box">
+                <h2 class="text-center mb-4">Iniciar Sesión</h2>
+                <form action="procesar_login.php" method="POST">
+                    <div class="mb-3">
+                        <label for="nombre_usuario" class="form-label">Nombre de Usuario</label>
+                        <input type="text" class="form-control" id="nombre_usuario" name="nombre_usuario" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                        <p>¿No tienes una cuenta? <a href="registro.php">Regístrate aquí</a></p>
 
-        <button type="submit">Iniciar Sesión</button>
-    </form>
-    <p>¿No tienes una cuenta? <a href="registro.php">Regístrate aquí</a></p>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-success btn-lg">Ingresar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <?php include 'componentes/footer.php'; ?>
 </body>
 </html>

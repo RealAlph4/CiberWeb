@@ -1,10 +1,17 @@
 <?php
-// Incluir el archivo de conexión
-include 'conex.php';  // Asegúrate de que la variable $pdo esté definida en este archivo
+session_start();
 
-// Consulta SQL para obtener todos los contactos
+//si el usuario no ha iniciado sesion, se redirige a la pagina de login
+if (!isset($_SESSION['usuario_id'])) {
+    header('Location: login.php');
+    exit(); //para la ejecucion del script para que no se muestre el contenido
+}
+
+include 'conex.php'; 
+
+//consulta SQL para obtener todos los contactos
 $sql = "SELECT id, nombre, email, mensaje, fecha FROM contactos";
-$stmt = $pdo->query($sql);  // Usar $pdo en lugar de $conn
+$stmt = $pdo->query($sql);
 ?>
 
 <!DOCTYPE html>
