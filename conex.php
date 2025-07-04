@@ -1,9 +1,9 @@
 <?php
 // Parámetros de conexión a la base de datos
-$servername = "localhost";  // Cambia esto si tu servidor MySQL está en otro host
-$username = "root";         // Cambia si tu usuario es diferente
-$password = "";             // Cambia si tienes una contraseña
-$dbname = "ciberweb";       // Nombre de la base de datos
+$servername = "mysql.inf.uct.cl";  // Cambia esto si tu servidor MySQL está en otro host
+$username = "msolisdeovando";         // Cambia si tu usuario es diferente
+$password = "kW(Z0]dt4Adt4p3N";             // Cambia si tienes una contraseña
+$dbname = "A2023_msolisdeovando";       // Nombre de la base de datos
 
 try {
     // Crear una nueva conexión PDO
