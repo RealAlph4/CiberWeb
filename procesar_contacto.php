@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Comprobar si la base de datos y la tabla existen, si no, crearla
     try {
         // Verificar si la base de datos "ciberweb" existe
-        $sql_create_db = "CREATE DATABASE IF NOT EXISTS ciberweb";
+        $sql_create_db = "CREATE DATABASE IF NOT EXISTS A2023_msolisdeovando";
         $pdo->exec($sql_create_db); // Ejecutar la creación de la base de datos si no existe
         
         // Verificar si la tabla "contactos" existe, si no, crearla
